@@ -12,9 +12,15 @@ body {
     margin-right: 30%;
 }
 
+h1, h2 {
+    font-family: Georgia, serif;
+}
+
 h1 {
     color: #fff;
     font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
     width: 100%;
 }
 
@@ -23,6 +29,7 @@ h2 {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 100;
     font-size: 22px;
+    text-transform: capitalize;
     line-height: 24px;
     padding-bottom: 30px;
     text-align: left;
@@ -31,13 +38,20 @@ h2 {
 p {
     color: AliceBlue;
     line-height: 1.3em;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
     text-align: left;
     width: 100%;
+}
+
+p::first-line {
+    font-weight: bold;
 }
 
 .image {
     background-size: cover;
     background-position: center;
+    background-image: url(../img/background-img.jpg);
     height: 300px;
 }
 
@@ -45,11 +59,24 @@ p {
     display: block;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
+    font-style: italic;
+    color: black;
     line-height: 14px;
     margin-left: 20px;
     padding: 10px;
     position: relative;
     top: 80%;
     width: 60%;
+    background-color: white;
+    opacity: 0.75;
+}
+
+.caption a {
+    text-decoration: none;
+}
+
+.caption a:hover {
+    color: purple;
+    text-decoration: none;
 }
 
